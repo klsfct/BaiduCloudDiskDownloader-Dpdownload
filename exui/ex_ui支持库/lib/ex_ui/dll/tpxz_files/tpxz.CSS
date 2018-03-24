@@ -1,0 +1,316 @@
+*, ul { margin: 0px; padding: 0px; list-style-type: none;}
+/* Windows_窗口DIV */
+#Windows_ckDIV{
+        position:relative;
+        width:681px;
+        height:424px;
+}
+/* Windows_标题栏 */
+#Windows_btl{
+        position:absolute;
+        left:0px;
+        top:50px;
+        width:681px;
+        height:26px;
+        border-top:1px solid black;
+        border-left:1px solid black;
+        border-right:1px solid black;
+        background-color:#0054E3;
+        padding:0px;
+}
+/* Windows_标题文本 */
+#Windows_btwb{
+        font-size: 13px;
+        position:absolute;
+        width:80px;
+        height:18px;
+        text-align:center;
+        color:white;
+        line-height:24px;
+        left:12px;
+        top:2px;
+}
+/* Windows_关闭按钮DIV */
+#Windows_gbanDIV{
+        position:absolute;
+        left:649px;
+        top:2px;
+        width:18px;
+        height:18px;
+        border:0px solid black;
+        padding:0px;
+}
+/* Windows_关闭按钮input */
+#Windows_gbaninput{
+        font-size: 12px;
+        position:absolute;
+        width:18px;
+        height:18px;
+}
+/* Windows_窗口客户区 */
+#Windows_ckkhq{
+        position:absolute;
+        left:0px;
+        top:74px;
+        width:681px;
+        height:400px;
+        z-index: 0;
+        border:1px solid black;
+        padding:0px;
+        background-color:rgb(240,240,240);
+}
+/* tpk1_DIV */
+#tpk1_DIV{
+        visibility: visible;
+        position:absolute;
+        left:16;
+        top:17;
+        width:640px;
+        height:272px;
+        z-index:1;
+}
+/* 图片框1 */
+#tpk1{
+        visibility: visible;
+        position:absolute;
+        left: 0;
+        top:0;
+        width:640px;
+        height:272px;
+        font-size:12px;
+        font:宋体;
+        color:rgb(0,0,0);
+        z-index:1;
+        size=20;
+        text-align:;
+}
+/* bq4_DIV */
+#bq4_DIV{
+        visibility: visible;
+        position:absolute;
+        left:391;
+        top:311;
+        width:152px;
+        height:24px;
+        z-index:1;
+}
+/* 标签4 */
+#bq4{
+        visibility: visible;
+        position:absolute;
+        left: 0;
+        top:0;
+        width:152px;
+        height:24px;
+        font-size:12px;
+        font:SimSun;
+        color:rgb(0,0,0);
+        z-index:1;
+        size=20;
+        text-align:center;
+}
+/* bq3_DIV */
+#bq3_DIV{
+        visibility: visible;
+        position:absolute;
+        left:138;
+        top:311;
+        width:119px;
+        height:24px;
+        z-index:1;
+}
+/* 标签3 */
+#bq3{
+        visibility: visible;
+        position:absolute;
+        left: 0;
+        top:0;
+        width:119px;
+        height:24px;
+        font-size:12px;
+        font:SimSun;
+        color:rgb(0,0,0);
+        z-index:1;
+        size=20;
+        text-align:center;
+}
+/* bq2_DIV */
+#bq2_DIV{
+        visibility: visible;
+        position:absolute;
+        left:302;
+        top:311;
+        width:64px;
+        height:24px;
+        z-index:1;
+}
+/* 标签2 */
+#bq2{
+        visibility: visible;
+        position:absolute;
+        left: 0;
+        top:0;
+        width:64px;
+        height:24px;
+        font-size:12px;
+        font:SimSun;
+        color:rgb(0,0,0);
+        z-index:1;
+        size=20;
+        text-align:left;
+}
+/* bq1_DIV */
+#bq1_DIV{
+        visibility: visible;
+        position:absolute;
+        left:14;
+        top:311;
+        width:114px;
+        height:24px;
+        z-index:1;
+}
+/* 标签1 */
+#bq1{
+        visibility: visible;
+        position:absolute;
+        left: 0;
+        top:0;
+        width:114px;
+        height:24px;
+        font-size:12px;
+        font:SimSun;
+        color:rgb(0,0,0);
+        z-index:1;
+        size=20;
+        text-align:left;
+}
+/* an5_DIV */
+#an5_DIV{
+        visibility: visible;
+        position:absolute;
+        left:294;
+        top:352;
+        width:75px;
+        height:28px;
+        z-index:1;
+        text-align: center;
+}
+/* 按钮5 */
+#an5{
+        visibility: visible;
+        position:absolute;
+        left: 0;
+        top:0;
+        width:75px;
+        height:28px;
+        font-size:12px;
+        font:SimSun;
+        color:rgb(0,0,0);
+        z-index:1;
+        size=20;
+        text-align:center;
+}
+/* an4_DIV */
+#an4_DIV{
+        visibility: visible;
+        position:absolute;
+        left:152;
+        top:352;
+        width:75px;
+        height:28px;
+        z-index:1;
+        text-align: center;
+}
+/* 按钮4 */
+#an4{
+        visibility: visible;
+        position:absolute;
+        left: 0;
+        top:0;
+        width:75px;
+        height:28px;
+        font-size:12px;
+        font:SimSun;
+        color:rgb(0,0,0);
+        z-index:1;
+        size=20;
+        text-align:center;
+}
+/* an3_DIV */
+#an3_DIV{
+        visibility: visible;
+        position:absolute;
+        left:578;
+        top:352;
+        width:75px;
+        height:28px;
+        z-index:1;
+        text-align: center;
+}
+/* 按钮3 */
+#an3{
+        visibility: visible;
+        position:absolute;
+        left: 0;
+        top:0;
+        width:75px;
+        height:28px;
+        font-size:12px;
+        font:SimSun;
+        color:rgb(0,0,0);
+        z-index:1;
+        size=20;
+        text-align:center;
+}
+/* an2_DIV */
+#an2_DIV{
+        visibility: visible;
+        position:absolute;
+        left:436;
+        top:352;
+        width:75px;
+        height:28px;
+        z-index:1;
+        text-align: center;
+}
+/* 按钮2 */
+#an2{
+        visibility: visible;
+        position:absolute;
+        left: 0;
+        top:0;
+        width:75px;
+        height:28px;
+        font-size:12px;
+        font:SimSun;
+        color:rgb(0,0,0);
+        z-index:1;
+        size=20;
+        text-align:center;
+}
+/* an1_DIV */
+#an1_DIV{
+        visibility: visible;
+        position:absolute;
+        left:10;
+        top:352;
+        width:75px;
+        height:28px;
+        z-index:1;
+        text-align: center;
+}
+/* 按钮1 */
+#an1{
+        visibility: visible;
+        position:absolute;
+        left: 0;
+        top:0;
+        width:75px;
+        height:28px;
+        font-size:12px;
+        font:SimSun;
+        color:rgb(0,0,0);
+        z-index:1;
+        size=20;
+        text-align:center;
+}

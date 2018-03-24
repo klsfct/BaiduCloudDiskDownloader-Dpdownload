@@ -1,0 +1,106 @@
+
+<!-- saved from url=(0124)file:///C:/Users/Administrator.LG-20150701EAMI/Desktop/%E7%BC%96%E8%BE%91%E5%99%A8/%E5%9B%BE%E7%89%87%E9%80%89%E6%8B%A9.html -->
+<html><style type="text/css" id="99741921000"></style><head><meta http-equiv="Content-Type" content="text/html; charset=GBK">
+
+<meta name="keywords" content="易语言,汉语编程,e语言,eyuyan,大有吴涛,吴涛,易飞扬">
+
+<title>图片选择</title>
+<link rel="stylesheet" type="text/css" href="./tpxz_files/tpxz.CSS">
+
+
+
+</head>
+
+<script>
+Path="";
+	
+function msage(msg,a,b,c,d,e)	// 客户端消息	
+{
+		if(msg=="1")//有新设计请求询问是否 刷新需要页面 返回0 不刷新 返回1为刷新
+		{
+sendmsg('125866','3','','','','');
+		return "1";	
+}	
+		return "2";		
+}
+		
+		
+//通知客户端 消息3为 通知网页正确载入 并受理		
+sendmsg('125866','3','','','','')		
+</script>
+
+<body leftmargin="0" marginheight="0" marginwidth="0" topmargin="0">
+     <form name="form" id="form" method="post" action="" onsubmit="return Submitcheck()">
+
+        <table style="margin-left: auto; margin-right: auto;" width="180" border="0" cellspacing="0" cellpadding="0" align="center">
+	    <tbody><tr height="318">
+	        <td align="center" width="100%" height="318">
+<!--Windows_窗口DIV--><div id="Windows_ckDIV">
+
+<!--Windows_标题栏--><div id="Windows_btl">
+<!--Windows_标题文本--><span id="Windows_btwb">图片选择</span>
+
+<!--Windows_关闭按钮DIV-->  <div id="Windows_gbanDIV">
+<!--Windows_关闭按钮input-->  <input id="Windows_gbaninput" type="button" name="Windows_gbaninput" onclick="javascript:window.close(); " value="×"></div>
+
+<!--Windows_窗口客户区--></div>
+<div id="Windows_ckkhq">
+
+<div id="tpk1_DIV" name="tpk1_DIV"><img id="tpk1" name="tpk1" src=" "></div>
+<div id="bq4_DIV" name="bq4_DIV"><span id="bq4" style="text-align:center;"></span>
+</div>
+<div id="bq3_DIV" name="bq3_DIV"><span id="bq3" style="text-align:center;">0字节</span>
+</div>
+<div id="bq2_DIV" name="bq2_DIV"><span id="bq2" style="text-align:left;">图片尺寸：</span>
+</div>
+<div id="bq1_DIV" name="bq1_DIV"><span id="bq1" style="text-align:left;">资源数据尺寸：</span>
+</div>
+<div id="an5_DIV" name="an5_DIV"><input id="an5" type="button" name="an5" value="导出" onclick="daochu()" ></div>
+<div id="an4_DIV" name="an4_DIV"><input id="an4" type="button" name="an4" value="清除" onclick="setimage('no')" ></div>
+<div id="an3_DIV" name="an3_DIV"><input id="an3" type="button" name="an3" value="取消" onclick="sendmsg('125864','2','','','','')" ></div>
+<div id="an2_DIV" name="an2_DIV"><input id="an2" type="button" name="an2" value="确认" onclick="sendmsg('125864','1',Path,'','','')" ></div>
+<div id="an1_DIV" name="an1_DIV"><input id="an1" type="button" name="an1" value="更换" onclick="genghuan()" ></div>
+</div></div>
+                              
+			</td>
+		</tr>
+	</tbody></table>
+    </form>
+	
+<script>
+setimage("get");
+
+function genghuan()
+{
+Path=sendmsg('125883','','选择图片','所有文件(*.*)|*.*','0','');
+setimage(Path);
+}
+
+function daochu()
+{
+sendmsg('125884',Path,'','保存路径','所有文件(*.*)|*.*','1')
+}
+			
+function setimage(tempPath)	// 客户端消息	
+{
+		if(tempPath=="get")
+		{
+ tempPath =sendmsg('125879','','','','','');
+ Path=tempPath;
+  tempPath = "file:///"+tempPath.replace(/\\/g, "/");
+          }else{
+		  		if(tempPath=="no")
+		{
+ Path="";
+ tempPath="no";
+          }else{
+	Path=tempPath;	  
+ tempPath = "file:///"+tempPath.replace(/\\/g, "/");
+}			  
+}  
+  document.getElementById('tpk1').src= tempPath;
+}
+
+</script>	
+
+</body></html>
